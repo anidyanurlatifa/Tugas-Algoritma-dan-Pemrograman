@@ -44,30 +44,32 @@ float rata(int arr[],int x){
 int main()
 {
     int x,y,n;
-    cout <<endl<< "<=================> Soal Tambah,Kurang,Kali,Bagi <===================>"<< endl;
+    cout << "<----------------> Soal Tambah,Kurang,Kali,Bagi <--------------->"<< endl;
     char h;
-    cout << "masukan angka1: ";
+    cout << "masukan angka(1): ";
     cin >> x;
-    cout << "masukan angka2: ";
+    cout << "masukan angka(2): ";
     cin >> y;
     cout << "hasil: " << endl;
 
-    cout << "1.ditambahkan = "<< tambah(x,y) << endl;
-    cout << "2.dikurangkan = "<< kurang(x,y) << endl;
-    cout << "3.dikalikan   = "<< kali(x,y) << endl;
-    cout << "4.dibagikan   = "<< bagi(x,y) << endl;
-    cout <<  "<=================> Soal Array <===================>" << endl;
-    cout << "Masukkan jumlah element Array yang akan diinput : ";
+    cout << "a.Ditambahkan = "<< tambah(x,y) << endl;
+    cout << "b.Dikurangkan = "<< kurang(x,y) << endl;
+    cout << "c.Dikalikan   = "<< kali(x,y) << endl;
+    cout << "d.Dibagikan   = "<< bagi(x,y) << endl;
+    cout <<  "<--------------------> Soal Element Array <------------------>" << endl;
+    cout << "Masukkan jumlah element Array  : ";
     cin >> x;
     int arr[x];
     for(int i=0;i<x;i++){
-        cout << "Masukkan array ke- [" << i << "] = ";
+        cout << "Masukkan angka array ke : [" << i << "] = ";
         cin >> arr [i];
     }
-    cout <<  "<======================================================>" << endl;
+    cout <<  "<----------------------------------------------------------->" << endl;
 
-    cout << "Total bilangan array yang diinput\t\t: " << total(arr,x) << endl;
-    cout << "Rata - Rata bilangan array yang diinput\t\t: " << rata(arr,x) << endl;
+    cout << "Total hasil bilangan array\t\t: " << total(arr,x) << endl;
+    cout << "Rata - Rata hasil bilangan array\t\t: " << rata(arr,x) << endl;
+    cout <<  "<----------------------------------------------------------->" << endl;
 
     return 0;
 }
+
